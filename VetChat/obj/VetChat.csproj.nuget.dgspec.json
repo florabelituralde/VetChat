@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flora\\OneDrive\\Week 1 MSSA\\ASP.NET\\VetChat\\VetChat.csproj": {}
+    "C:\\Users\\flora\\Documents\\VetChat\\VetChat\\VetChat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flora\\OneDrive\\Week 1 MSSA\\ASP.NET\\VetChat\\VetChat.csproj": {
+    "C:\\Users\\flora\\Documents\\VetChat\\VetChat\\VetChat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flora\\OneDrive\\Week 1 MSSA\\ASP.NET\\VetChat\\VetChat.csproj",
+        "projectUniqueName": "C:\\Users\\flora\\Documents\\VetChat\\VetChat\\VetChat.csproj",
         "projectName": "VetChat",
-        "projectPath": "C:\\Users\\flora\\OneDrive\\Week 1 MSSA\\ASP.NET\\VetChat\\VetChat.csproj",
+        "projectPath": "C:\\Users\\flora\\Documents\\VetChat\\VetChat\\VetChat.csproj",
         "packagesPath": "C:\\Users\\flora\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flora\\OneDrive\\Week 1 MSSA\\ASP.NET\\VetChat\\obj\\",
+        "outputPath": "C:\\Users\\flora\\Documents\\VetChat\\VetChat\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\flora\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -37,6 +41,36 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.5.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -47,6 +81,14 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
