@@ -7,19 +7,23 @@ a.navbar-brand {
     word-break: break-all;
 }
 
-#nav {
-    background-color: #791304;
+.navbar{
+    font-size: 18px;
+    font-weight: 600;
 }
 
+#carouselIndicators {
+    height: 100%;
+}
 
-#logo {
-    height: 30px;
-    width: 100px;
+img {
+    height: 40px;
+    width: 150px;
 }
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #0366d6;
+  color: #0366d6;
 }
 
 .btn-primary {
@@ -32,10 +36,6 @@ a {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
-}
-
-.nav-link {
-    font-size: 16px;
 }
 
 /* Sticky footer styles
