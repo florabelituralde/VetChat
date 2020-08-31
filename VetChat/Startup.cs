@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using VetChat.Models;
+using Microsoft.EntityFrameworkCore;
+using VetChat.Data;
 
 namespace VetChat
 {
@@ -24,6 +27,11 @@ namespace VetChat
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<VetChatContext>(options =>
+           options.UseSqlServer(Configuration.GetConnectionString("VetChatContext"))
+            );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

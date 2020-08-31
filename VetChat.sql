@@ -1,6 +1,7 @@
 CREATE TABLE [UserInformation]
 (
   [UserID]			int				NOT NULL,
+  [Email]			nvarchar(50)	NOT NULL,
   [Username]		nvarchar(50)	NOT NULL,
   [Password]		nvarchar(50)	NOT NULL,
   [Firstname]		nvarchar(50)	NOT NULL,
@@ -17,7 +18,6 @@ CREATE TABLE [GroupData] (
   [GroupID]			int				NOT NULL,
   [UserID]			int				NOT NULL,
   [GroupName]		nvarchar(50)	NOT NULL,
-  [GroupVisibility] nvarchar(50)	NOT NULL,
   [MembersCount]	int
   CONSTRAINT PK_GroupID
   PRIMARY KEY ([GroupID])
