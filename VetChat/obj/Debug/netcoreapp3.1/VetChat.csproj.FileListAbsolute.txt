@@ -203,3 +203,13 @@ C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\
 C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_AuthLayout.cshtml.g.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csprojAssemblyReference.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfoInputs.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfo.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CoreCompileInputs.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.pdb
