@@ -1,27 +1,119 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using VetChat.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore.Metadata;
+using VetChat.Models;
 
 namespace VetChat.Data
 {
-    public class VetChatContext : IdentityDbContext<ApplicationUser>
+    public partial class VetChatContext : DbContext
     {
+        public VetChatContext()
+        {
+        }
+
         public VetChatContext(DbContextOptions<VetChatContext> options)
             : base(options)
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        public virtual DbSet<AdminData> AdminData { get; set; }
+        public virtual DbSet<GroupData> GroupData { get; set; }
+        public virtual DbSet<UserInformation> UserInformation { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
-            // Customize the ASP.NET Identity model and override the defaults if needed.
-            // For example, you can rename the ASP.NET Identity table names and more.
-            // Add your customizations after calling base.OnModelCreating(builder);
+            modelBuilder.Entity<AdminData>(entity =>
+            {
+                entity.HasKey(e => e.AdminId)
+                    .HasName("PK_AdminID");
+
+                entity.Property(e => e.AdminId)
+                    .HasColumnName("AdminID")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.GroupId).HasColumnName("GroupID");
+
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.Group)
+                    .WithMany(p => p.AdminData)
+                    .HasForeignKey(d => d.GroupId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AdminData_GroupID");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.AdminData)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AdminData_UserID");
+            });
+
+            modelBuilder.Entity<GroupData>(entity =>
+            {
+                entity.HasKey(e => e.GroupId)
+                    .HasName("PK_GroupID");
+
+                entity.Property(e => e.GroupId)
+                    .HasColumnName("GroupID")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.GroupName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.GroupVisibility)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.GroupData)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_GroupData_UserID");
+            });
+
+            modelBuilder.Entity<UserInformation>(entity =>
+            {
+                entity.HasKey(e => e.UserId)
+                    .HasName("PK_UserID");
+
+                entity.Property(e => e.UserId)
+                    .HasColumnName("UserID")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.Branch)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.DateOfEntry).HasColumnType("date");
+
+                entity.Property(e => e.Ets)
+                    .HasColumnName("ETS")
+                    .HasColumnType("date");
+
+                entity.Property(e => e.Firstname)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Lastname)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Username)
+                    .IsRequired()
+                    .HasMaxLength(50);
+            });
+
+            OnModelCreatingPartial(modelBuilder);
         }
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

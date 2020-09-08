@@ -9,19 +9,31 @@ a.navbar-brand {
 }
 
 .carousel {
-    width: 851px;
-    height: 315px;
-    margin: auto;
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    z-index: -1;
 }
 
 #logo {
-    height: 30px;
-    width: 100px;
+    height: 50px;
+    width: 150px;
 }
 
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
+}
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+}
+
+#login {
+    color: black;
+}
+
+#register {
+    color: black;
 }
 
 .btn-primary {
@@ -96,6 +108,8 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     font-family: "Roboto", sans-serif;
+    background-image: url(/css/oRqI3d.jpg);
+    margin: 0;
 }
 
 .footer {
