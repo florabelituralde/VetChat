@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\flora\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\flora\\.nuget\\packages"
+      "C:\\Users\\flora\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }
