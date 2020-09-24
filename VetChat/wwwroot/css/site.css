@@ -20,6 +20,11 @@ a.navbar-brand {
     width: 150px;
 }
 
+#textbox {
+    background: rgba(128, 128, 128, 0.4);
+ 
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
