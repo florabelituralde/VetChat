@@ -22,5 +22,9 @@ namespace VetChat.Areas.Identity.Data
         public DateTime DateOfEntry { get; internal set; }
         public DateTime Ets { get; internal set; }
 
+<<<<<<< Updated upstream
+=======
+        public byte[] UserPhoto { get; set; }
+>>>>>>> Stashed changes
     }
 }
