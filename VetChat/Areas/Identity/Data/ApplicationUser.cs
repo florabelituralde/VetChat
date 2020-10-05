@@ -17,5 +17,9 @@ namespace VetChat.Areas.Identity.Data
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
         public string LastName { get; set; }
+        public string Contact { get; internal set; }
+        public string Branch { get; internal set; }
+        public DateTime DateOfEntry { get; internal set; }
+        public DateTime Ets { get; internal set; }
     }
 }

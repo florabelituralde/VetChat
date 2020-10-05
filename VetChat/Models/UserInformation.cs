@@ -35,7 +35,7 @@ namespace VetChat.Data
 
         public string Firstname { get; set; }
         public string Lastname { get; set; }
-        public string Contact { get; set; }
+        public int Contact { get; set; }
         public string Branch { get; set; }
 
         [DataType(DataType.Date)]

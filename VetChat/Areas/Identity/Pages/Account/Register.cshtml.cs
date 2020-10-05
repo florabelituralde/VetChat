@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -13,8 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
 using VetChat.Areas.Identity.Data;
-using VetChat.Data;
 
 namespace VetChat.Areas.Identity.Pages.Account
 {
@@ -72,6 +71,18 @@ namespace VetChat.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            public string Branch { get; set; }
+
+            [DataType(DataType.Date)]
+            [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+            [Display(Name = "Date of Entry")]
+            public DateTime DateOfEntry { get; set; }
+
+            [DataType(DataType.Date)]
+            [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+            [Display(Name = "ETS Date")]
+            public DateTime Ets { get; set; }
+
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
@@ -91,7 +102,6 @@ namespace VetChat.Areas.Identity.Pages.Account
                 Response.Redirect("/Home");
             }
 
-
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
@@ -102,7 +112,7 @@ namespace VetChat.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.UserName, PhoneNumber = Input.PhoneNumber, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName };
+                var user = new ApplicationUser { UserName = Input.UserName, PhoneNumber = Input.PhoneNumber, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName, Branch = Input.Branch, DateOfEntry = Input.DateOfEntry, Ets = Input.Ets };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
