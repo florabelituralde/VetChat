@@ -23,6 +23,10 @@ namespace VetChat.Areas.Identity.Data
         public DateTime Ets { get; internal set; }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        public byte[] UserPhoto { get; set; }
+>>>>>>> Stashed changes
 =======
         public byte[] UserPhoto { get; set; }
 >>>>>>> Stashed changes
