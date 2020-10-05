@@ -21,5 +21,6 @@ namespace VetChat.Areas.Identity.Data
         public string Branch { get; internal set; }
         public DateTime DateOfEntry { get; internal set; }
         public DateTime Ets { get; internal set; }
+
     }
 }
