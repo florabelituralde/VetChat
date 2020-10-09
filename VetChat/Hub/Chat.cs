@@ -9,8 +9,11 @@ namespace VetChat.Hub
 {
     public class Chat : Microsoft.AspNetCore.SignalR.Hub
     {
-        //public async Task SendMessage(string message, string room, bool join)
+        //public async Task SendMessageGroup(string groupName, string user, string message)
         //{
+        //      // One way to do
+        //    await Clients.Group(groupName).SendAsync("ReceiveMessage", user, message);
+        //      // Another way
         //    if (join)
         //    {
         //        await JoinRoom(room).ConfigureAwait(false);
@@ -24,38 +27,38 @@ namespace VetChat.Hub
         //    }
         //}
 
-        //public Task JoinRoom(string roomName)
+        //public Task JoinRoom(string groupName)
         //{
-        //    return Groups.AddToGroupAsync(Context.ConnectionId, roomName);
+        //    return Groups.AddToGroupAsync(Context.ConnectionId, groupName);
         //}
 
-        //public Task LeaveRoom(string roomName)
+        //public Task LeaveRoom(string groupName)
         //{
-        //    return Groups.RemoveFromGroupAsync(Context.ConnectionId, roomName);
+        //    return Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
         //}
         public async Task SendMessage(string message)
         {
             await Clients.All.SendAsync("ReceiveMessage", Context.User.Identity.Name ?? "anonymous", message);
         }
 
-        //public async Task AddToGroup(string roomName)
-        //{
-        //    await Groups.AddToGroupAsync(Context.ConnectionId, roomName);
+        public async Task AddToGroup(string groupName, string user)
+        {
+            await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
 
-        //    await Clients.Group(roomName).SendAsync("Send", $"{Context.ConnectionId} has joined the group {roomName}.");
-        //}
+            await Clients.Group(groupName).SendAsync("Send", $"{Context.ConnectionId} has joined the group {groupName}.");
+        }
 
-        //public async Task RemoveFromGroup(string roomName)
-        //{
-        //    await Groups.RemoveFromGroupAsync(Context.ConnectionId, roomName);
+        public async Task RemoveFromGroup(string groupName, string user)
+        {
+            await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
 
-        //    await Clients.Group(roomName).SendAsync("Send", $"{Context.ConnectionId} has left the group {roomName}.");
-        //}
+            await Clients.Group(groupName).SendAsync("Send", $"{Context.ConnectionId} has left the group {groupName}.");
+        }
 
-        //public async Task SendTyping(object sender)
-        //{
-        //    // Broadcast the typing notification to all clients except the sender
-        //    await Clients.Others.SendAsync("typing", sender);
-        //}
+        public async Task TypingGroup(string user, string groupName)
+        {
+            // Broadcast the typing notification to all clients except the sender
+            await Clients.Group(groupName).SendAsync("typing", user);
+        }
     }
 }
