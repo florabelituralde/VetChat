@@ -9,56 +9,54 @@ namespace VetChat.Hub
 {
     public class Chat : Microsoft.AspNetCore.SignalR.Hub
     {
-        //public async Task SendMessageGroup(string groupName, string user, string message)
+        //public async Task SendMessage(string message)
         //{
-        //      // One way to do
-        //    await Clients.Group(groupName).SendAsync("ReceiveMessage", user, message);
-        //      // Another way
-        //    if (join)
-        //    {
-        //        await JoinRoom(room).ConfigureAwait(false);
-        //        await Clients.Group(room).SendAsync("ReceiveMessage", Context.User.Identity.Name ?? "anonymous", " joined to " + room).ConfigureAwait(true);
-
-        //    }
-        //    else
-        //    {
-        //        await Clients.Group(room).SendAsync("ReceiveMessage", Context.User.Identity.Name ?? "anonymous", message).ConfigureAwait(true);
-
-        //    }
+        //    await Clients.All.SendAsync("OnMessageReceived", Context.User.Identity.Name ?? "anonymous", message);
         //}
 
-        //public Task JoinRoom(string groupName)
-        //{
-        //    return Groups.AddToGroupAsync(Context.ConnectionId, groupName);
-        //}
+        private static readonly Dictionary<string, string> Chatters = new Dictionary<string, string>();
 
-        //public Task LeaveRoom(string groupName)
-        //{
-        //    return Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
-        //}
-        public async Task SendMessage(string message)
+        public async Task SendMessage(string name, string message)
         {
-            await Clients.All.SendAsync("ReceiveMessage", Context.User.Identity.Name ?? "anonymous", message);
+            Task updateChatters = Task.CompletedTask;
+            if (!Chatters.ContainsKey(Context.ConnectionId))
+            {
+                Chatters.Add(Context.ConnectionId, name);
+                updateChatters = Clients.All.SendAsync("OnManageChatters", name, 1);
+            }
+
+            Task broadcast = Task.CompletedTask;
+            if (message.StartsWith("/w"))
+            {
+                var target = message.Split(' ')[1];
+                broadcast = Clients.Client(Chatters.FirstOrDefault(c => c.Value == target).Key).SendAsync("OnPrivateMessage", name, message.Substring(3 + target.Length));
+            }
+            else
+            {
+                broadcast = Clients.All.SendAsync("OnMessageReceived", name, message);
+            }
+
+            Task.WaitAll(updateChatters, broadcast);
         }
 
-        public async Task AddToGroup(string groupName, string user)
+        public override async Task OnConnectedAsync()
         {
-            await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
+            await base.OnConnectedAsync();
 
-            await Clients.Group(groupName).SendAsync("Send", $"{Context.ConnectionId} has joined the group {groupName}.");
+            await Clients.Client(Context.ConnectionId)
+                .SendAsync("OnConnected", Chatters.Select(k => k.Value).ToArray());
         }
 
-        public async Task RemoveFromGroup(string groupName, string user)
+        public override async Task OnDisconnectedAsync(Exception exception)
         {
-            await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+            var name = Chatters.FirstOrDefault(k => k.Key == Context.ConnectionId);
+            if (!name.Equals(default(KeyValuePair<string, string>)))
+            {
+                Chatters.Remove(Context.ConnectionId);
+                await Clients.All.SendAsync("OnManageChatters", name.Value, 0);
+            }
 
-            await Clients.Group(groupName).SendAsync("Send", $"{Context.ConnectionId} has left the group {groupName}.");
-        }
-
-        public async Task TypingGroup(string user, string groupName)
-        {
-            // Broadcast the typing notification to all clients except the sender
-            await Clients.Group(groupName).SendAsync("typing", user);
+            await base.OnDisconnectedAsync(exception);
         }
     }
 }

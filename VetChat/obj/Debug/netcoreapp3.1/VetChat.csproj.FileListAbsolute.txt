@@ -206,9 +206,6 @@ C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csprojAssemblyReference.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfoInputs.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfo.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CoreCompileInputs.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.dll
@@ -415,3 +412,10 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.genruntimeconfig.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Chat.cshtml.g.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Common.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Protocols.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CoreCompileInputs.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cache

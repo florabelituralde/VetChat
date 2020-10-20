@@ -30,7 +30,7 @@ namespace VetChat
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddMvc();
-            services.AddSignalR();
+            services.AddSignalR().AddAzureSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,7 +61,12 @@ namespace VetChat
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
-                endpoints.MapHub<Chat>("/chat");
+                //endpoints.MapHub<Chat>("/chat");
+            });
+
+            app.UseAzureSignalR(configure =>
+            {
+                configure.MapHub<Chat>("/chat");
             });
         }
     }

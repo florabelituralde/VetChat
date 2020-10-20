@@ -134,3 +134,38 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
+
+/** Chat Room */
+
+#displayMessage {
+    height: 400px;
+    overflow: scroll;
+}
+
+#chatRoom p, #members p {
+    margin: 1px;
+}
+
+/*#entry {
+    border-top: 1px solid #000;
+}
+
+    #entry, #entry *, hr, footer {
+        background-color: #FFF;
+    }*/
+
+.form-control {
+    display: flex;
+}
+
+.form-control-static > * {
+    margin: 2px;
+}
+
+#name {
+    width: 150px;
+}
+
+#chatMessage {
+    flex: 1 100%;
+}

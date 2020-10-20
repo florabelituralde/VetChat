@@ -1,37 +1,139 @@
 ﻿@page
-<div class="container">
-    <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col-2">Group Name</div>
-        <div class="col-4">
-            <input type="text" id="joinButton" />
-            @*<input type="button" id="enterButton" value="Enter Group" />
-                <input type="button" id="exitButton" value="Exit Group" />*@
-        </div>
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row display fill" id="displayMessage">
+    <div class="col-sm-10 fill" id="chatRoom">
+        <p id="noMessages">No messages yet</p>
+    </div>
+    <div class="col-sm-2 fill" style="border-left: 1px solid #000" id="members"></div>
+</div>
+
+<div class="row" id="entry">
+    <div class="col-md-12" id="dataEntry">
+        <form id="dataEntry" class="form-inline">
+            <input type="text" class="form-control form-control-static" id="name" placeholder="Name" />
+            <input type="text" class="form-control" style="width: 400px; height:100px;" id="chatMessage" placeholder="Chat Message" />
+            <button type="button" class="btn btn-primary" id="sendMessage">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        </form>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-2">Message</div>
-        <div class="col-4"><input type="text" id="txtmessage" /></div>
-    </div>
-    <div class="row"> </div>
-    <div class="row">
-        <div class="col-6">
-            <input type="button" id="sendBtn" value="Send" />
+@*<div class="container">
+        <div class="row">
+            <div class="col-2">Message</div>
+            <div class="col-4"><input type="text" id="txtmessage" /></div>
+        </div>
+        <div class="row"> </div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendBtn" value="Send" />
+            </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <hr />
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-6">
-        <ul id="ulmessages"></ul>
-    </div>
-</div>
-<script src="/lib/microsoft/signalr/dist/browser/signalr.js"></script>
-<script src="/js/chat.js"></script>  
+    <div class="row">
+        <div class="col-6">
+            <ul id="ulmessages"></ul>
+        </div>
+    </div>*@
+
+@section scripts {
+
+    <script src="/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script type="text/javascript">
+        (function () {
+
+            var theHub;
+            const chatRoom = document.getElementById("chatRoom");
+            const members = document.getElementById("members");
+
+            OnLoad();
+
+            function OnLoad() {
+
+                theHub = new signalR.HubConnectionBuilder()
+                    .withUrl("/Chat")
+                    .build();
+
+                theHub.on("OnMessageReceived", OnMessageReceived);
+                theHub.on("OnManageChatters", ManageChatters);
+                theHub.on("OnConnected", CurrentChatters);
+                theHub.on("OnPrivateMessage", Whisper);
+
+                theHub.start();
+
+                document.getElementById("sendMessage").addEventListener("click", event => {
+
+                    var name = document.getElementById("name").value;
+                    var message = document.getElementById("chatMessage").value;
+                    SendMessage(name, message);
+                    event.preventDefault();
+
+                });
+
+            }
+
+            function OnMessageReceived(name, message) {
+
+                var noMsg = document.getElementById("noMessages");
+                if (noMsg) noMsg.remove();
+
+                var newMsg = document.createElement("p");
+                newMsg.innerHTML = `<b>${name}</b> - ${message}`;
+                chatRoom.appendChild(newMsg);
+
+            }
+
+            function SendMessage(name, message) {
+
+                theHub.invoke("SendMessage", name, message);
+
+            }
+
+            function ManageChatters(name, action) {
+
+                if (action) {
+                    var newChatter = document.createElement("p");
+                    newChatter.id = `@@${name}`;
+                    newChatter.textContent = name;
+                    members.appendChild(newChatter);
+                } else {
+                    document.getElementById(`@@${name}`).remove();
+                }
+
+            }
+
+            function CurrentChatters(chatters) {
+
+                console.log(chatters);
+
+                for (var i = 0; i < chatters.length; i++) {
+                    var newChatter = document.createElement("p");
+                    newChatter.id = `@@${chatters[i]}`;
+                    newChatter.textContent = chatters[i];
+                    members.appendChild(newChatter);
+                }
+
+            }
+
+            function Whisper(name, message) {
+
+                var noMsg = document.getElementById("noMessages");
+                if (noMsg) noMsg.remove();
+
+                var newMsg = document.createElement("p");
+                newMsg.innerHTML = `<i>PRIVATE: <b>${name}</b> - ${message}</i>`;
+                chatRoom.appendChild(newMsg);
+
+            }
+
+        })();
+    </script>
+
+}
