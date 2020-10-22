@@ -1,6 +1,8 @@
 # VetChat
 # By Florabel Ituralde
 
+[![Build Status](https://dev.azure.com/florabelituralde/VetChat/_apis/build/status/florabelituralde.VetChat?branchName=master)](https://dev.azure.com/florabelituralde/VetChat/_build/latest?definitionId=1&branchName=master)
+
 According to a survey made on March 5, 2020, there have been nearly 20 veterans dying by suicide every day, about one and a half times as high as the civilian suicide rate, according to the most recent federal statistics. 
 The percentage of veterans who considered taking their own lives before and after joining the military in the U.S. from 2014 to 2020 shows a noticeable increase throughout the timespan. It was found that 10 percent of respondents had considered suicide before joining the military, whereas 44 percent had considered suicide after joining the military.
 
