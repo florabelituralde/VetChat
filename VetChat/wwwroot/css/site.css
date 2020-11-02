@@ -56,6 +56,16 @@ a {
     border-color: #05080c;
 }
 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #2196f3;
+    background-color: #007bff;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link {
+    background-color: #05080c;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -162,10 +172,22 @@ body {
     margin: 2px;
 }
 
+#mems {
+    font-family: 'Black Ops One', cursive;
+}
+
+#chats {
+    font-family: 'Black Ops One', cursive;
+}
+
 #name {
     width: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
 }
 
 #chatMessage {
     flex: 1 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
 }

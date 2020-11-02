@@ -3,20 +3,29 @@
     Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row display fill" id="displayMessage">
-    <div class="col-sm-10 fill" id="chatRoom">
-        <p id="noMessages">No messages yet</p>
+<div class="container-fluid" style=" background: rgba(0, 0, 0, 0.4);">
+    <div class="page-header">
+        <h2 class="text-center" id="chats">Chat</h2>
     </div>
-    <div class="col-sm-2 fill" style="border-left: 1px solid #000" id="members"></div>
-</div>
+    <div class="row display fill" id="displayMessage">
+        <div class="col-sm-10 fill" id="chatRoom">
+            <p id="noMessages">No messages yet</p>
+        </div>
+        <div class="col-sm-2 fill" style="border-left: 1px solid #000" id="members">
+            <div class="page-header">
+                <h4 class="text-center" id="mems">Members</h4>
+            </div>
+        </div>
+    </div>
 
-<div class="row" id="entry">
-    <div class="col-md-12" id="dataEntry">
-        <form id="dataEntry" class="form-inline">
-            <input type="text" class="form-control form-control-static" id="name" placeholder="Name" />
-            <input type="text" class="form-control" style="width: 400px; height:100px;" id="chatMessage" placeholder="Chat Message" />
-            <button type="button" class="btn btn-primary" id="sendMessage">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-        </form>
+    <div class="row" id="entry">
+        <div class="col-md-12" id="dataEntry">
+            <form id="dataEntry" class="form-inline">
+                <input type="text" class="form-control form-control-static text-white" id="name" placeholder="Name" />
+                <input type="text" class="form-control text-white" style="width: 400px; height:100px;" id="chatMessage" placeholder="Chat Message" />
+                <button type="button" class="btn btn-primary" id="sendMessage">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </form>
+        </div>
     </div>
 </div>
 
