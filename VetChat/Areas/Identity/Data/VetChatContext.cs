@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using VetChat.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace VetChat.Data
 {
@@ -19,7 +16,6 @@ namespace VetChat.Data
         public virtual DbSet<AdminData> AdminData { get; set; }
         public virtual DbSet<GroupData> GroupData { get; set; }
         public virtual DbSet<UserInformation> UserInformation { get; set; }
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

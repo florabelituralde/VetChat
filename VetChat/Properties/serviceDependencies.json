@@ -1,12 +1,16 @@
 {
   "dependencies": {
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "VetChatContextConnection"
+    },
     "mssql1": {
       "type": "mssql",
       "connectionId": "DefaultConnection"
     },
-    "mssql2": {
-      "type": "mssql",
-      "connectionId": "VetChatContextConnection"
+    "signalr1": {
+      "type": "signalr",
+      "connectionId": "Azure__SignalR__ConnectionString"
     }
   }
 }

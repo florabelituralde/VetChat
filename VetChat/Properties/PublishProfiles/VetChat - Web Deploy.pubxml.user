@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgpCUREVP8kaTxC2WR/aUGgAAAAACAAAAAAAQZgAAAAEAACAAAADFhbbIMBuEfH/e1B/xcIhKnBkDEj/DlM0AMXJzQ46d1wAAAAAOgAAAAAIAACAAAACunceJCdWJoBqe/2pu40bitlKlcGXLNwP3NmgzyqeLHYAAAADHjedI4aXQd0xQcu2vBYi0Pwv9L0N9VFIRiKSoiGAQx4+dFPrVdL1txWcBVGmAmSC2bCwv8/8J2yIYdZ2CMhUP/Jlbj0D3cch//Kaeczn37DoDroAKRJtm/pBHpU3a8oQaghZaoCUirIrZxoV6X5/JGsSuKpYXLAFu3YK7U30v8UAAAADXgDQdoxReJM3XNNq2hvrVggzsHPNTPyj4rZL+fNWnqrguscgoyzm1OkgxQ3JDHAVmaK6hOKkqfgQ7UEJS27Tg</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:vetchatdbserver.database.windows.net,1433%3bInitial Catalog=VetChat_db%3bUser Id=vetchat%40vetchatdbserver%3bPassword=TempPassword16</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="VetChatContextConnection">
+      <Value>Data Source=tcp:vetchatdbserver.database.windows.net,1433%3bInitial Catalog=VetChat_db%3bUser Id=vetchat%40vetchatdbserver%3bPassword=TempPassword16</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="VetChat.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:vetchatdbserver.database.windows.net,1433%3bInitial Catalog=VetChat_db%3bUser Id=vetchat%40vetchatdbserver%3bPassword=TempPassword16</Value>
+    </EFMigrations>
+    <EFMigrations Include="VetChat.Data.VetChatContext">
+      <Value>Data Source=tcp:vetchatdbserver.database.windows.net,1433%3bInitial Catalog=VetChat_db%3bUser Id=vetchat%40vetchatdbserver%3bPassword=TempPassword16</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

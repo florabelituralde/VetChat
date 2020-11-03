@@ -46,7 +46,6 @@ namespace VetChat.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-
             [Required]
             [DataType(DataType.Text)]
             [Display(Name = "Username")]

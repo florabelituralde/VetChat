@@ -419,3 +419,8 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CoreCompileInputs.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.VetChat - Web Deploy.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\mssql1.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\mssql2.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\profile.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\signalr1.arm.json

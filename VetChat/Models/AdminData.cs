@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using VetChat.Models;
-
-namespace VetChat.Data
+﻿namespace VetChat.Data
 {
     public partial class AdminData
     {

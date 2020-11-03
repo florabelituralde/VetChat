@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\VetChat.Data.ApplicationDbContext.sql" />
+  <dbfullsql path="C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\VetChat.Data.VetChatContext.sql" />
+</sitemanifest>

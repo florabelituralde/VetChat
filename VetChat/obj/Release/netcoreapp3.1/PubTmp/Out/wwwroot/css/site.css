@@ -1,0 +1,193 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+.carousel {
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    z-index: -1;
+}
+
+#navigation :active {
+    background-color: black;
+}
+
+#logo {
+    height: 50px;
+    width: 150px;
+}
+
+#textbox {
+    background: rgba(128, 128, 128, 0.4);
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #ffffff;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+}
+
+#login {
+    color: #2196F3;
+}
+
+#register {
+    color: #2196F3;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #05080c;
+    border-color: #05080c;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #05080c;
+    border-color: #05080c;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #2196f3;
+    background-color: #007bff;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link {
+    background-color: #05080c;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+div.login-logout-tab div.card.header {
+    padding: 0px 0px 12px 0px;
+}
+
+div.login-logout-tab li.nav-tabs {
+    margin: 0px 0px -12px 0px;
+}
+
+div.login-logout-tab li.nav-item {
+    width: 50%
+}
+
+div.login-logout-tab a.nav-link {
+    font-size: 25px;
+    color: #495057;
+    text-align: center;
+}
+
+div.login i {
+    justify-self: center;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: "Roboto", sans-serif;
+    background-image: url(/css/oRqI3d.jpg);
+    margin: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+#update-profile-button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/** Chat Room */
+
+#displayMessage {
+    height: 400px;
+    overflow: scroll;
+}
+
+#chatRoom p, #members p {
+    margin: 1px;
+}
+
+/*#entry {
+    border-top: 1px solid #000;
+}
+
+    #entry, #entry *, hr, footer {
+        background-color: #FFF;
+    }*/
+
+.form-control {
+    display: flex;
+}
+
+.form-control-static > * {
+    margin: 2px;
+}
+
+#mems {
+    font-family: 'Black Ops One', cursive;
+}
+
+#chats {
+    font-family: 'Black Ops One', cursive;
+}
+
+#name {
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+#chatMessage {
+    flex: 1 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}

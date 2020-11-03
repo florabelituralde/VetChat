@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="VetChat" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\flora\\OneDrive\\Documents\\GitHub\\VetChat\\VetChat\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="VetChat.Data.ApplicationDbContext" description="" value="Data Source=tcp:vetchatdbserver.database.windows.net,1433;Initial Catalog=VetChat_db;User Id=vetchat@vetchatdbserver;Password=TempPassword16" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\flora\\OneDrive\\Documents\\GitHub\\VetChat\\VetChat\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\VetChat\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+  <parameter name="VetChat.Data.VetChatContext" description="" value="Data Source=tcp:vetchatdbserver.database.windows.net,1433;Initial Catalog=VetChat_db;User Id=vetchat@vetchatdbserver;Password=TempPassword16" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\flora\\OneDrive\\Documents\\GitHub\\VetChat\\VetChat\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\VetChat\.Data\.VetChatContext\.sql$" />
+  </parameter>
+</parameters>

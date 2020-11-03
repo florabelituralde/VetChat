@@ -1,5 +1,3 @@
-using System;
-
 namespace VetChat.Models
 {
     public class ErrorViewModel

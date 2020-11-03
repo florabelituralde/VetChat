@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "signalr1": {
+      "restored": true,
+      "restoreTime": "2020-11-03T14:10:54.6727468Z"
+    },
+    "mssql2": {
+      "restored": true,
+      "restoreTime": "2020-11-03T14:23:15.8992444Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-11-03T14:26:31.3512522Z"
+    }
+  },
+  "parameters": {
+    "mssql2.subscriptionId": {
+      "Type": "subscription",
+      "Value": "18880bdd-16a5-437c-a2b9-6b24e6b95e69"
+    },
+    "signalr1.resourceGroupName": {
+      "Type": "resourceGroup",
+      "Value": "ManagedPlatform"
+    },
+    "mssql2.resourceGroupName": {
+      "Type": "resourceGroup",
+      "Value": "VetChatResourceGroup"
+    },
+    "mssql1.subscriptionId": {
+      "Type": "subscription",
+      "Value": "18880bdd-16a5-437c-a2b9-6b24e6b95e69"
+    },
+    "mssql1.resourceGroupName": {
+      "Type": "resourceGroup",
+      "Value": "VetChatResourceGroup"
+    },
+    "signalr1.subscriptionId": {
+      "Type": "subscription",
+      "Value": "7e32ea4c-c2f9-4733-8e96-da38c20cd971"
+    }
+  }
+}
