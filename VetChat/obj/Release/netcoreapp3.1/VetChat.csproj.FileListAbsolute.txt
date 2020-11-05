@@ -219,3 +219,4 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3.1\VetChat.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3.1\VetChat.pdb
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Release\netcoreapp3.1\VetChat.genruntimeconfig.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\local\signalr1.arm.json

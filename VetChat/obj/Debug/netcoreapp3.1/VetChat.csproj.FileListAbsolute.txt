@@ -203,18 +203,18 @@ C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\
 C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\flora\OneDrive\Week 1 MSSA\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_AuthLayout.cshtml.g.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csprojAssemblyReference.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfoInputs.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfo.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.dll
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.pdb
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.VetChat - Web Deploy.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\local\signalr1.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\mssql1.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\mssql2.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\profile.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\signalr1.arm.json
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\VetChat.StaticWebAssets.xml
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\VetChat.exe
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\VetChat.deps.json
@@ -227,11 +227,15 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Common.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Protocols.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -347,6 +351,13 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfoInputs.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.AssemblyInfo.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CoreCompileInputs.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cache
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorAssemblyInfo.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.TagHelpers.input.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.TagHelpers.output.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.RazorCoreGenerate.cache
@@ -390,6 +401,7 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Chat.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -409,18 +421,6 @@ C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CopyComplete
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\staticwebassets\VetChat.StaticWebAssets.Manifest.cache
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\staticwebassets\VetChat.StaticWebAssets.xml
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.dll
+C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.pdb
 C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.genruntimeconfig.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\libman.json
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Chat.cshtml.g.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Common.dll
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.dll
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Protocols.dll
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.csproj.CoreCompileInputs.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\obj\Debug\netcoreapp3.1\VetChat.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.VetChat - Web Deploy.json
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\mssql1.arm.json
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\mssql2.arm.json
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\profile.arm.json
-C:\Users\flora\OneDrive\Documents\GitHub\VetChat\VetChat\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\VetChat - Web Deploy\signalr1.arm.json
